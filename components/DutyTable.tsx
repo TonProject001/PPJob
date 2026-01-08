@@ -23,7 +23,7 @@ const DutyTable: React.FC<DutyTableProps> = ({ date, records }) => {
   return (
     <div className="bg-white p-8 md:p-12 shadow-xl min-h-[11in] w-fit mx-auto print-area border border-gray-100 rounded-sm">
       <div className="text-center mb-6">
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-black">บัญชีลงเวลาการปฏิบัติราชการของข้าราชการ</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-black font-['Sarabun']">บัญชีลงเวลาการปฏิบัติราชการของข้าราชการ</h1>
         <div className="inline-block border-b border-black pb-1 px-8">
           <p className="text-lg text-black">{displayDate}</p>
         </div>
@@ -81,11 +81,17 @@ const DutyTable: React.FC<DutyTableProps> = ({ date, records }) => {
         </table>
       </div>
 
-      <div className="mt-12 flex justify-end text-sm">
-        <div className="text-center w-72 space-y-3 text-black">
-          <p className="mb-8 font-medium">ลงชื่อ..............................................................ผู้ตรวจสอบ</p>
-          <p className="font-medium">(..............................................................)</p>
-          <p className="font-medium">ตำแหน่ง..............................................................</p>
+      <div className="mt-12 flex justify-end pr-4 text-sm no-print-pr-0">
+        <div className="text-center w-[400px] space-y-3 text-black">
+          <p className="mb-8 font-medium whitespace-nowrap">
+            ลงชื่อ..............................................................ผู้ตรวจสอบ
+          </p>
+          <p className="font-medium whitespace-nowrap">
+            (..............................................................)
+          </p>
+          <p className="font-medium whitespace-nowrap">
+            ตำแหน่ง..............................................................
+          </p>
         </div>
       </div>
     </div>
